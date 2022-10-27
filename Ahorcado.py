@@ -246,7 +246,7 @@ def gameover(palabra):
 
 def read():
     datos = pd.read_table("https://raw.githubusercontent.com/Alexme116/ahorcado/main/palabras.txt")
-    palabra=str((datos.palabras[random.randint(0,70)]))
+    palabra=str((datos.palabras[random.randint(0,len(datos.palabras))]))
     mat_pal=[]
     pal=""
     letras=len(palabra)
